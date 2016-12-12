@@ -7,7 +7,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  // color: #fff;
+   color: #fff;
   h2 {
     text-align: center;
     font-size: 4rem!important;
@@ -20,7 +20,7 @@
     font-size: 2rem;
   }
   a {
-    color: #000!important;
+    color: #fff!important;
     text-transform: uppercase;
     display: inline-block;
     -webkit-transition: all 500ms ease-in-out;
@@ -36,35 +36,46 @@ transition: all 500ms ease-in-out;
   #blank {
     min-height: 500px;
   }
-  // .carousel-item a:hover {
-  //   color: #000!important;
-  //   background-color: #fff!important;
-  // }
+
+
+  //**** VIDEO BG ****
+  .video-background {
+    background: #000;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -99;
+  }
+  .video-foreground,
+  .video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+
   #homeTitle {
     text-align: center;
   }
   #bigtext {
     text-transform: uppercase;
+    margin-top: -4%;
   }
-  // .homebigtext h1 {
-  //   width: 80%;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  //   margin-top: 10%;
-  //   opacity: 0.8;
-  //   text-transform: uppercase;
-  //   text-align: center;
-  //   font-size: 8rem;
-  // }
+  .bigtext-line2 {
+    margin-top: -5%;
+  }
   #navbar {
     position: fixed;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     z-index: 10000;
-    background-color: rgba(255, 255, 255, .8);
-    -webkit-box-shadow: 5px 5px 5px 0 #aaa;
-box-shadow: 5px 5px 5px 0 #aaa;
+    background: #000;
+//    background-color: rgba(255, 255, 255, .8);
+//    -webkit-box-shadow: 5px 5px 5px 0 #aaa;
+//box-shadow: 5px 5px 5px 0 #aaa;
     ul {
       display: flex;
       justify-content: space-around;
@@ -75,7 +86,7 @@ box-shadow: 5px 5px 5px 0 #aaa;
       }
       a {
         font-family: 'Roboto Mono', monospace;
-        color: #000!important;
+        color: cyan!important;
         text-transform: uppercase;
         display: inline-block;
         -webkit-transition: all 500ms ease-in-out;
@@ -140,10 +151,12 @@ box-shadow: 5px 5px 5px 0 #aaa;
   #press p {
     font-style: italic;
     line-height: 1.5;
-    // border: 1px solid #000;
+    color: #000;
+     //border: 1px solid #fff;
+    background: #fff;
     padding: 4%;
-    -webkit-box-shadow: 20px 15px 10px 0 #aaa;
-box-shadow: 20px 15px 10px 0 #aaa;
+//    -webkit-box-shadow: 20px 15px 10px 0 #aaa;
+//box-shadow: 20px 15px 10px 0 #aaa;
   }
   #bandsintown {
     div {
@@ -152,14 +165,14 @@ box-shadow: 20px 15px 10px 0 #aaa;
   }
   #video {
     h2 {
-      margin-bottom: 8%;
+      margin-bottom: 4%;
     }
   }
   #audio {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 8%;
+    margin-top: 4%;
     padding: 4%;
     -webkit-box-shadow: 20px 15px 10px 0 #aaa;
 box-shadow: 20px 15px 10px 0 #aaa;
@@ -180,7 +193,7 @@ box-shadow: 20px 15px 10px 0 #aaa;
     display: flex;
     justify-content: space-between;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
+    //background-color: rgba(255, 255, 255, 0.7);
     .imgLink {
       margin: 2% 4%;
     }
@@ -223,8 +236,8 @@ box-shadow: 20px 15px 10px 0 #aaa;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
-    -webkit-box-shadow: 20px 15px 10px 0 #aaa;
-box-shadow: 20px 15px 10px 0 #aaa;
+//    -webkit-box-shadow: 20px 15px 10px 0 #aaa;
+//box-shadow: 20px 15px 10px 0 #aaa;
   }
   #copyright2 {
     font-size: 0.6rem;
@@ -243,7 +256,7 @@ box-shadow: 20px 15px 10px 0 #aaa;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    -webkit-box-shadow: 20px 15px 10px 0 #aaa;
-box-shadow: 20px 15px 10px 0 #aaa;
+//    -webkit-box-shadow: 20px 15px 10px 0 #aaa;
+//box-shadow: 20px 15px 10px 0 #aaa;
   }
 }

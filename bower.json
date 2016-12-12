@@ -27,6 +27,7 @@
     "fullpage.js": "^2.8.8",
     "scrollme": "^1.1.0",
     "skippr": "^1.2.0",
-    "unslider": "^2.0.3"
+    "unslider": "^2.0.3",
+    "vide": "^0.5.1"
   }
 }
