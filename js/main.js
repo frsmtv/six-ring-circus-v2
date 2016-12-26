@@ -11,7 +11,27 @@ jQuery(function($){
   $('#bigtext').bigtext();
   $('.homebigtext').bigtext();
 
-  // // ==== NAV BAR SHOW ====
+  // **** NAVBAR REDUCE ON SCROLL ****
+    var scroll_start = 0;
+    var startchange = $('body');
+    var offset = startchange.offset();
+    $(document).scroll(function() {
+        scroll_start = $(this).scrollTop();
+        if(scroll_start > offset.top) {
+            $('#navbar').css({
+                height: '30px',
+                'font-size': '0.7rem'});
+            $('.navLink').css("margin-top", "-30px");
+        } else {
+            $('#navbar').css({
+                height: '67px',
+                'font-size': '1rem',
+            });
+        }
+    });
+
+
+    // // ==== NAV BAR SHOW ====
   // var scroll_start = 0;
   // var startchange = $('#info');
   // var offset = startchange.offset();
